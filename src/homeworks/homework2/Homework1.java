@@ -39,10 +39,16 @@ public class Homework1 {
 
         double xResult = xDouble / yInt;
         System.out.println("Результат компиляции: " + xResult);
+        System.out.println();
 
 
         // задача 3
 
+        int varMart = 749;
 
+        int varCount1 = 56/8;
+        int varCount2 = 2+2;
+        int varCont3 = 150-141;
+        System.out.println("Вывод в консоль числа 749: " + varCount1 + "," + varCount2 + "," + varCont3);
     }
 }
