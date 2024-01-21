@@ -46,9 +46,9 @@ public class Homework1 {
 
         int varMart = 749;
 
-        int varCount1 = 56/8;
-        int varCount2 = 2+2;
-        int varCont3 = 150-141;
+        int varCount1 = varMart / 100;
+        int varCount2 = (varMart - varCount1 * 100) /10;
+        int varCont3 = varMart - varCount1 * 100 - varCount2 * 10;
         System.out.println("Вывод в консоль числа 749: " + varCount1 + "," + varCount2 + "," + varCont3);
     }
 }
