@@ -37,11 +37,9 @@ public class Homework4 {
         myNum2.division2Method();
         myNum2.division3Method();
 
-        Task5 myNum3 = new Task5(76);
+        Task5 myNum3 = new Task5(899);
         myNum3.division2Method();
         myNum3.division3Method();
-
-
     }
 
 }
