@@ -4,15 +4,17 @@ import java.util.Arrays;
 
 public class CalculatorDemo {
     public static void main(String[] args) {
-        Calculator number1 = new Calculator();
+        Calculator numbers = new Calculator();
+        numbers.calcInput();
 
-        int x = number1.calcInput("Введите число №1: ");
 
-        Calculator number2 = new Calculator();
+        numbers.sumMath();
+        numbers.subMath();
+        numbers.divMath();
+        numbers.multiMath();
 
-        int y = number2.calcInput("Введите число №2: ");
 
-        System.out.println(x + " " + y);
+
 
     }
 

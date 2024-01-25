@@ -7,15 +7,29 @@ public class Calculator {
     int y;
 
 
-    public int calcInput(String messege){
+    public void calcInput(){
         UserInput num = new UserInput();
-        System.out.println(messege);
-        int x = num.inputIntiger();
-        return x;
+       this.x = num.inputIntiger("Введите число 1");
+       this.y = num.inputIntiger("Введите число 2");
     }
-
-    public void addMath(){}
-    public void subMath(){}
-    public void multiMath(){}
-    public void divMath(){}
+    public int sumMath(){
+        int sum = x + y;
+        System.out.println("Результат сложения: " + sum);
+        return sum;
+    }
+    public int subMath(){
+        int sub = x - y;
+        System.out.println("Результат вычитания: "+ sub);
+        return sub;
+    }
+    public int multiMath(){
+        int multi = x * y;
+        System.out.println("Результат умножения: " + multi);
+        return multi;
+    }
+    public int divMath(){
+        int division = x / y;
+        System.out.println("Результат деления: " + division);
+        return division;
+    }
 }

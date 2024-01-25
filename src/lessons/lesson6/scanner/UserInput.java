@@ -11,8 +11,9 @@ public class UserInput {
         return inputText;
     }
 
-    public int inputIntiger(){
+    public int inputIntiger(String messege){
         Scanner scanner = new Scanner(System.in);
+        System.out.println(messege);
         int inputInt = scanner.nextInt();
         return inputInt;
     }
