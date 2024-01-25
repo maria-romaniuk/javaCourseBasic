@@ -1,0 +1,13 @@
+package extraHomework.task15;
+
+public class Phone {
+    String model; // was unexpected symbol {
+
+    public Phone(String newModel) {  // missed word public and different name of constructor
+        this.model = newModel;
+    }
+
+    public String getModel() {
+        return model;
+    }
+}
