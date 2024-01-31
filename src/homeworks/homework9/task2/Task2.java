@@ -28,7 +28,11 @@ public class Task2 {
         } else if ((num4 >= 0) && (num1 < num4) && (num2 < num4) && (num3 < num4) && !(num4 > 100)) {
             System.out.println("Your number " + num4 + " is the biggest here");
         } else {
-            System.out.println("I asked from 0 to 100");
+            System.out.println("Your numbers out of line 0 to 100");
         }
+
+        int b = Math.max(num1,num2);
+        int c = Math.max(num3,num4);
+
     }
 }

@@ -21,6 +21,36 @@ public class Book {
         this.bookName = bookName;
     }
 
+    public void BookInfo(int pagesQuantity, String catalogNumber, String available) {
+        this.pagesQuantity = pagesQuantity;
+        this.catalogNumber = catalogNumber;
+        this.available = available;
+    }
+
+    public int getPagesQuantity() {
+        return pagesQuantity;
+    }
+
+    public void setPagesQuantity(int pagesQuantity) {
+        this.pagesQuantity = pagesQuantity;
+    }
+
+    public String getCatalogNumber() {
+        return catalogNumber;
+    }
+
+    public void setCatalogNumber(String catalogNumber) {
+        this.catalogNumber = catalogNumber;
+    }
+
+    public String getAvailable() {
+        return available;
+    }
+
+    public void setAvailable(String available) {
+        this.available = available;
+    }
+
     public void printFullBookInfo(){
         System.out.println("Author: " + authorName);
         System.out.println("Book: " + bookName);
