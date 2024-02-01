@@ -16,12 +16,28 @@ public class Task2 {
 
         UserInput ui = new UserInput();
         int number = ui.inputIntiger("Enter your number: ");
+        int check = 0;
+        int simpleNum =0;
+        int notSimple =0;
+        boolean checkIsNotEven = true;
 
+        for (int i = 2; i<=number/2; i++){
+            check = number%i;
+            if (check == 0){
+                notSimple = number;
+                checkIsNotEven= false;
 
-        for (int i = 0; i<=number/2; i++){
+            }else{
+//                    System.out.println("not simple");
+                simpleNum = number;
+                }
 
+//        System.out.println("iteration number" + i + " | division check " + check);
         }
 
+        System.out.println("Not simple number" + notSimple);
+
+        System.out.println("Simple number" + simpleNum);
 
 
 //        for (int i=2; i<=number; i++ ){
