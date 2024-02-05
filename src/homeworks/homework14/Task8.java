@@ -15,11 +15,15 @@ public class Task8 {
 //        String replaceChar = "";
 
 //        char[] charArray = checkText.toCharArray();
-        for (int i = 0; i<= words.length; i++){
-            if (words[i].equals(" ")){
-
+//        String[] newArray;
+        int newLength = 0;
+        for (int i = 0; i< words.length; i++){
+            if (!words[i].equals(" ")){
+                newLength++;
             }
         }
+
+        System.out.println("новая длинна " + newLength);
 
 //        System.out.println(Arrays.toString(charArray));
         System.out.println("words " + Arrays.toString(words));
