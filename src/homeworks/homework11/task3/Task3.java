@@ -2,6 +2,8 @@ package homeworks.homework11.task3;
 
 import lessons.lesson6.scanner.UserInput;
 
+
+//Используйте цикл, чтобы просуммировать все числа, которые ввел пользователь, до первого отрицательного.
 public class Task3 {
     public static void main(String[] args) {
         UserInput ui = new UserInput();

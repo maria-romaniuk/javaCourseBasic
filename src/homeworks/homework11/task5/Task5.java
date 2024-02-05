@@ -2,6 +2,9 @@ package homeworks.homework11.task5;
 
 import lessons.lesson6.scanner.UserInput;
 
+//Пользователь ввел число N. Подсчитайте количество четных и не четных чисел в диапазоне от 0 до N
+
+
 public class Task5 {
     static UserInput ui= new UserInput();
 
@@ -18,7 +21,7 @@ public class Task5 {
             while (i%2 ==0){
                 even++;
             }
-            while (i%2 == 1){
+            while (i % 2 == 1){
                 odd++;
             }
 

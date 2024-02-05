@@ -4,6 +4,7 @@ import lessons.lesson6.scanner.UserInput;
 
 public class TaskDemo {
 
+    //Подсчитать сумму всех четных чисел от 0 до N при том что N вводится пользователем
 
     public static void main(String[] args) {
         UserInput ui = new UserInput();

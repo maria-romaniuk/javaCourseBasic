@@ -10,18 +10,22 @@ public class ArrayDemo {
         boolean checkType = false;
 
         for (int i = 0; i < array.length; i++){
-            array[i] = (int) (Math.random() * 100);
+            array[i] = (int) (Math.random() * ( 99 - 10 + 1) + 10);
             element = array[i];
             if(element< array[i]){
                 checkType = true;
             }
 
-
         }
+
         System.out.println(Arrays.toString(array));
-        System.out.println("массив является строго возрастающей последовательностью? " + checkType);
 
-
+        if(checkType){
+            System.out.println("массив является строго возрастающей последовательностью ");
+        }
+        else{
+            System.out.println("массив является не строго возрастающей последовательностью ");
+        }
 
     }
 

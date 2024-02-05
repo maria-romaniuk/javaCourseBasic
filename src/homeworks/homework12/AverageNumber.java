@@ -1,4 +1,4 @@
-package lessons.lesson12.practice3;
+package homeworks.homework12;
 
 import lessons.lesson6.scanner.UserInput;
 
