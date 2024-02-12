@@ -22,14 +22,14 @@ public class Task1 {
 //        int [] array = {6,7,3,1,4,10,12,11,5,9,8};
         int [] array = {6,5,3,1,4};
         System.out.println(Arrays.toString(array));
-//        Arrays.sort(array);
+        Arrays.sort(array);
         System.out.println(Arrays.toString(array));
 //S = n*(1+n) / 2
-        int n = array.length;
+        int n = array.length + 1;
         int sumProgression = n * (1 + n)/2;
         int sumArray = 0;
 
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             sumArray = sumArray + array[i];
         }
         int missedNumber = sumProgression - sumArray;

@@ -25,14 +25,15 @@ public class Task2 {
         }
         System.out.println(Arrays.toString(array));
 
-        for (int i = arrayLength -1; i >=0; i--){
-//            array[i] = backArray[i];
 
-//            for (int j = 0; j < arrayLength; j++) {
-//                backArray[j] = array[i];
-//            }
+        for (int i = 0; i < arrayLength/2; i++){
+            int temp = array[i];
+            array[i]= array[arrayLength - 1 - i] ;
+            array[arrayLength - 1 - i] = temp;
+
         }
-        System.out.println("back" + Arrays.toString(backArray));
+        System.out.println("reverse array:  " + Arrays.toString(array));
+
 
 
 

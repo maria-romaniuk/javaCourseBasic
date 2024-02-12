@@ -15,27 +15,47 @@ public class Task6 {
         int evenLength = 0;
         int oddLength = 0;
 
-        String[] oddArray = new String[oddLength];
-        String[] evenArray = new String[evenLength];
+
 
 
         for (int i = 0; i < wordsArray.length; i++) {
-            int arrayNum = wordsArray[i].length();
+//            int arrayNum = wordsArray[i].length();
 //        System.out.println(arrayNum);
-            if (arrayNum % 2 == 0) {
-//                evenArray[i] = wordsArray[i];
+            if (wordsArray[i].length() % 2 == 0) {
+//                evenArray[evenLength] = wordsArray[i];
                 evenLength++;
             } else {
-//                oddArray[i] = wordsArray[i];
+//                oddArray[oddLength] = wordsArray[i];
                 oddLength++;
             }
 
         }
-
-
-
-        System.out.println(Arrays.toString(evenArray));
+        System.out.println(oddLength);
         System.out.println(evenLength);
+        System.out.println(Arrays.toString(wordsArray));
+
+        String[] evenArray = new String[evenLength];
+        String[] oddArray = new String[oddLength];
+        int evenIndex = 0;
+        int oddIndex = 0;
+        for (int i = 0; i < wordsArray.length; i++) {
+            if ((wordsArray[i].length()) % 2 == 0){
+                evenArray[evenIndex] = wordsArray[i];
+                evenIndex++;
+            } else {
+                oddArray[oddIndex] = wordsArray[i];
+                oddIndex++;
+            }
+        }
+        System.out.println("Even array " + Arrays.toString(evenArray));
+        System.out.println("Odd array  " + Arrays.toString(oddArray));
+
+
+
+
 
     }
+
+
+
 }

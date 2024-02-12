@@ -6,8 +6,12 @@ package homeworks.homework14.task7;
 //найти максимум среди элементов массива и его индекс (если значения повторяются то найти первый)
 //найти сумму всех элементов
 //если максимальный элемент повторяется несколько раз то создать массив из индесов
-//
-//в идеале - оформить основные модули вашей программы отдельными методами
+
+
+
+
+//в идеале - оформить основные модули вашей программы отдельными методами - доделать и разбраться почемуне получается
+
 
 
 import lessons.lesson6.scanner.UserInput;
@@ -22,10 +26,11 @@ public class ArrayDemo {
 
         int arrayLength = ui.inputIntiger("Enter your array length: ");
         int [] array = new int[arrayLength];
+        // отдельный метод
 
             for (int i = 0; i < array.length; i++) {
                 Random random = new Random();
-                array[i] = random.nextInt(100);
+                array[i] = random.nextInt(100 + 1);
             }
         System.out.println(Arrays.toString(array));
 

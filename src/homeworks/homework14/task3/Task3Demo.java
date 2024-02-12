@@ -28,7 +28,7 @@ public class Task3Demo {
 
         System.out.println(Arrays.toString(myArray));
 
-        System.out.println(even);
+        System.out.println("even numbers in array: " + even);
 //
 //
 //        Counter array = new Counter();
