@@ -8,5 +8,23 @@ package homeworks.homework19.task5;
 //   Создать второй массив только из чётных элементов первого массива, если они там есть, и вывести его на экран.
 
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class TaskDemo {
+    public static void main(String[] args) {
+        ArrayService service = new ArrayService();
+
+        int n =service.enterNum();
+
+        int[] array = service.createArray(n);
+        System.out.println(Arrays.toString(array));
+
+        int[] evenArray = service.createEvenArray(array);
+
+        System.out.println(Arrays.toString(evenArray));
+
+
+    }
+
 }

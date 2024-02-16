@@ -9,8 +9,17 @@ public class ArrayService {
 
     private UserInput ui = new UserInput();
 
-    public String[] fillArray(){
+
+
+    public String createText(){
         String text = ui.inputText("enter your text, please: ");
+
+        text = text.replace("  ","");
+        text = text.replace("!","");
+        text = text.replace(",","");
+        return text;
+    }
+    public String[] fillArray(String text){
         String [] array = text.split(" ");
         return array;
     }
