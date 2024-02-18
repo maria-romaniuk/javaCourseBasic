@@ -1,4 +1,4 @@
-package homeworks.homework19.project.project1;
+package project.project01.task1;
 
 
 //Задание: Создайте класс ArrayService, содержащий метод sort,
@@ -16,8 +16,29 @@ package homeworks.homework19.project.project1;
 //Реализуйте класс ArraySortDemo для демонстрации работы программы.
 
 
-public class ArraySortDemo {
-    public static void main(String[] args) {
+import java.util.Arrays;
 
+public class ArrayService {
+
+    public int[] sortArray(int[] array){
+        Arrays.sort(array);
+        return array;
     }
+
+    public int[] reverceArray(int[] array){
+        int temp = 0;
+        for (int i = 0; i < array.length/2; i++) {
+           temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i -1] = temp;
+        }
+        return array;
+    }
+    //Добавьте метод printArray для вывода отсортированного массива.
+    public void printArray(String messege,int[] array){
+        System.out.println(messege);
+
+        System.out.println(Arrays.toString(array));
+    }
+
 }

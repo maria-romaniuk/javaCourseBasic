@@ -1,4 +1,4 @@
-package homeworks.homework19.project.project2;
+package project.project01.task2;
 
 //Задание: Разработайте класс StudentService для управления
 //списком студентов.
@@ -22,9 +22,25 @@ package homeworks.homework19.project.project2;
 //Реализуйте класс StudentsSortDemo для демонстрации работы программы.
 
 
+import java.util.Arrays;
 
 public class StudetsSortDemo {
     public static void main(String[] args) {
+        StudentService service = new StudentService();
+
+
+        Student[] studentsArray = service.createStudentsArrayFromUserInput();
+
+        service.fillStudentsArrayFromUserInput(studentsArray);
+        System.out.println(Arrays.toString(studentsArray));
+
+        service.printStudentsInfo(studentsArray);
+
+
+        Student[] sortedArray = service.sortStudentsByLastname(studentsArray);
+        service.printStudentsInfo(sortedArray);
+
+
 
     }
 }
